@@ -9,6 +9,7 @@
 </div>
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="slideshow.css">
 
 <head>
   <title>Nelson's Blog</title>
@@ -16,21 +17,69 @@
 
 <body>
 
-<button class="tablink" onclick="openPage('ABC', this, 'DarkCyan')" id="defaultOpen">Building all-button controllers</button>
+<button class="tablink" onclick="openPage('ABC', this, 'DarkCyan')" id="defaultOpen">Beginner Electrical Engineering</button>
 <button class="tablink" onclick="openPage('music', this, '#00897B')" >Playing music</button>
 <button class="tablink" onclick="openPage('CS', this, '#008962')">Computer science</button>
-<button class="tablink" onclick="openPage('more', this, '#008930')">More</button>
+<button class="tablink" onclick="openPage('Dogs', this, '#008930')">Dogs</button>
+<button class="tablink" onclick="openPage('more', this, '#578700')">More</button>
 
 <div id="ABC" class="tabcontent">
 
   <p>
-  Here's some various images from a few times that I've worked in the PSU electronics prototyping lab.
+  I've experimented with a few projects at the 
+  <a href="http://psu-epl.github.io/">PSU electronics prototyping lab.</a>
+  
   </p>
   
-  <img src="PCB creation.jpg" class="roundimages" alt="pcb image" style="width:25%;height:25%;">
-  
-  <img src="socd.jpg" class="roundimages" alt="pcb image" style="width:25%;height:25%;">
-  
+<!-- Controller building slideshow -->  
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="abc3.jpg" style="width:100%">
+    
+    I wanted to make a logic chip that handled when a controller input left+right at the same time. The first step was getting a schematic from
+    <a href="https://www.autodesk.com/products/eagle/overview">Eagle</a>.
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="abc4.jpg" style="width:100%">
+    With some help, I designed the board, and sent the gerber files to
+    <a href="https://oshpark.com/">OSH park</a>, who makes low-cost printed circuit boards (PCBs) for hobbyists.
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="abc5.jpg" style="width:100%">
+    Once the PCBs arrived, I ordered a few electronic parts from amazon, and soldered them to the board.    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="abc2.jpg" style="width:100%">
+    Here's a close shot of the final product.
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+
+
 
 </div>
 
@@ -39,13 +88,16 @@
 </div>
 
 <div id="CS" class="tabcontent">
+  <p>I love dogs.</p>
+</div>
+
+<div id="Dogs" class="tabcontent">
   <p>Here's some examples of projects I've worked on for PSU.</p>
 </div>
 
 <div id="more" class="tabcontent">
   <p>Thanks for checking my page out. Here's a few more links related to me.</p>
 </div>
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 </script>
