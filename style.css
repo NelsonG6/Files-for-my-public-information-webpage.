@@ -13,6 +13,11 @@
   position: relative;
 }
 
+.roundimages {
+    border-radius: 8px;
+    border: 8px solid #777777;
+}
+
 /* Place text in the middle of the image */
 .hero-text {
   text-align: center;
