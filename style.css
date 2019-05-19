@@ -1,3 +1,12 @@
+h1{
+    text-shadow: 
+        4px 0 0 black, -4px 0 0 black, 0 4px 0 black, 0 -4px 0 black, 
+        4px 4px black, -4px -4px 0 black, 4px -4px 0 black, -4px 4px 0 black;
+}
+
+
+
+
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (homepage.jpg). This will make the text easier to read */
@@ -58,6 +67,38 @@ body, html {
   display: none;
   padding: 100px 20px;
   height: 100%;
+}
+
+.tablink{
+    color: black;
+}
+
+.tabcontent{
+    color: black;
+}
+
+
+
+.text_color_1 {
+    color: DarkCyan;
+}
+
+.text_color_2 {
+    color: #00897B;
+}
+
+.text_color_3 {
+    color: #008962;
+}
+
+.text_color_4 {
+    color: #008930;
+}
+
+.subheader{
+    text-shadow: 
+        2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, 
+        -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
 }
 
 #ABC {background-color: DarkCyan;}
