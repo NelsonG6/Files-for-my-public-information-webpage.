@@ -1,5 +1,5 @@
 var slideIndex = [1,1,1,1,1,1];
-var slideId = ["mySlides1", "mySlides2", "mySlides3","myslides4","myslides5","myslides6"];
+var slideId = ["mySlides1", "mySlides2", "mySlides3","mySlides4","mySlides5","mySlides6"];
 showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
