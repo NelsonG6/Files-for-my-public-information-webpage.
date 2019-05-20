@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="slideshow.css">
   <link rel="stylesheet" href="hero.css">
   <link rel="stylesheet" href="htabs.css">
+  <link rel="stylesheet" href="vtabs.css">
 
   <head>
     <title>Nelson's Blog</title>
@@ -25,58 +26,67 @@
 
     <div id="ABC" class="tabcontent">
       <p>
-      I've experimented with a few projects at the 
-      <a href="http://psu-epl.github.io/">PSU electronics prototyping lab.</a>
-      
+        I've experimented with a few projects at the 
+        <a href="http://psu-epl.github.io/">PSU electronics prototyping lab.</a>
       </p>
       
-      <!-- Controller building slideshow -->  
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides1">
-          <div class="numbertext">1 / 4</div>
-          <img src="pictures/abc3.jpg" style="width:100%">
-          
-          I wanted to make a logic chip that handled when a controller input left+right at the same time. The first step was getting a schematic from
-          <a href="https://www.autodesk.com/products/eagle/overview">Eagle</a>.
-        </div>
-
-        <div class="mySlides1">
-          <div class="numbertext">2 / 4</div>
-          <img src="pictures/abc4.jpg" style="width:100%">
-          With some help, I designed the board, and sent the gerber files to
-          <a href="https://oshpark.com/">OSH park</a>, who makes low-cost printed circuit boards (PCBs) for hobbyists.
-          
-        </div>
-
-        <div class="mySlides1">
-          <div class="numbertext">3 / 4</div>
-          <img src="pictures/abc5.jpg" style="width:100%">
-          Once the PCBs arrived, I ordered a few electronic parts from amazon, and soldered them to the board.    
-        </div>
-
-        <div class="mySlides1">
-          <div class="numbertext">4 / 4</div>
-          <img src="pictures/abc2.jpg" style="width:100%">
-          Here's a close shot of the final product.
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      <div class="vtab">
+        <button class="vtablinks" onclick="openvTab(event, 'inputfilter')" id="defaultOpen2">PCB design</button>
+        <button class="vtablinks" onclick="openvTab(event, 'arduino')">Arduino Controller</button>
       </div>
-      <br>
 
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1, 0)"></span> 
-        <span class="dot" onclick="currentSlide(2, 0)"></span> 
-        <span class="dot" onclick="currentSlide(3, 0)"></span> 
-        <span class="dot" onclick="currentSlide(4, 0)"></span> 
+      <div id="inputfilter" class="vtabcontent">
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides1">
+            <div class="numbertext">1 / 4</div>
+            <img src="pictures/abc3.jpg" style="width:100%">
+             
+            I wanted to make a logic chip that handled when a controller input left+right at the same time. The first step was getting a schematic from
+            <a href="https://www.autodesk.com/products/eagle/overview">Eagle</a>.
+          </div>
+
+          <div class="mySlides1">
+            <div class="numbertext">2 / 4</div>
+            <img src="pictures/abc4.jpg" style="width:100%">
+            With some help, I designed the board, and sent the gerber files to
+            <a href="https://oshpark.com/">OSH park</a>, who makes low-cost printed circuit boards (PCBs) for hobbyists.
+          </div>
+
+          <div class="mySlides1">
+            <div class="numbertext">3 / 4</div>
+            <img src="pictures/abc5.jpg" style="width:100%">
+            Once the PCBs arrived, I ordered a few electronic parts from amazon, and soldered them to the board.    
+          </div>
+
+          <div class="mySlides1">
+            <div class="numbertext">4 / 4</div>
+            <img src="pictures/abc2.jpg" style="width:100%">
+            Here's a close shot of the final product.
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1, 0)"></span> 
+          <span class="dot" onclick="currentSlide(2, 0)"></span> 
+          <span class="dot" onclick="currentSlide(3, 0)"></span> 
+          <span class="dot" onclick="currentSlide(4, 0)"></span> 
+        </div>
       </div>
-    </div>
+
+      <div id="arduino" class="vtabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p> 
+      </div>
+    </div>  
+
 
     <div id="music" class="tabcontent">
       <p>Here's some pictures of my instruments.</p>
@@ -145,6 +155,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="htabs.js"></script>
     <script src="slideshows.js"></script>
+    <script src="vtab.js"></script>
 
   </body>
 </html>

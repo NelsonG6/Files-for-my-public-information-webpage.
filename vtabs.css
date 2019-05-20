@@ -1,7 +1,7 @@
 * {box-sizing: border-box}
 
 /* Style the tab */
-.tab {
+.vtab {
   float: left;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
@@ -10,7 +10,7 @@
 }
 
 /* Style the buttons that are used to open the tab content */
-.tab button {
+.vtab button {
   display: block;
   background-color: inherit;
   color: black;
@@ -24,12 +24,12 @@
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.vtab button:hover {
   background-color: #ddd;
 }
 
 /* Create an active/current "tab button" class */
-.tab button.active {
+.vtab button.active {
   background-color: #ccc;
 }
 
@@ -37,7 +37,7 @@
 .vtabcontent {
   float: left;
   padding: 0px 12px;
-  border: 1px solid #ccc;
+  
   width: 70%;
   border-left: none;
   height: 300px;
