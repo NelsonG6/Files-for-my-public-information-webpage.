@@ -17,6 +17,16 @@ function openPage(pageName, elmnt, color) {
 
   // Add the specific color to the button used to open the tab content
   elmnt.style.backgroundColor = color;
+
+  var v_tabs = document.getElementsByClassName(pageName);
+  var i;
+  for(i = 0; i < v_tabs.length; i++)
+  {
+    if(v_tabs[i].classList.contains("defaultOpen"))
+    {
+      v_tabs[i].click();
+    }
+  }
 }
 
-document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpenHTab").click();
