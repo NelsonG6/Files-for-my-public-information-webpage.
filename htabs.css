@@ -1,0 +1,38 @@
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+.tablink{
+    color: black;
+}
+
+.tabcontent{
+    color: black;
+}
+
+#ABC {background-color: DarkCyan;}
+#music {background-color: #00897B;}
+#CS {background-color: #008962;}
+#Dogs {background-color: #008930;}
+#more {background-color: #578700;}

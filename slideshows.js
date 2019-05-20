@@ -1,10 +1,8 @@
-var dotIndex = [1,1];
-var dotId = ["dots1", "dots2"];
-
 var slideIndex = [1,1];
-var slideId = ["mySlides fade", "mySlides2"];
+var slideId = ["mySlides1", "mySlides2"];
 showSlides(1, 0);
 showSlides(1, 1);
+//showSlides(1, 1);
 
 // Next/previous controls
 function plusSlides(n, no) {
@@ -15,13 +13,13 @@ function plusSlides(n, no) {
 //n = which slide
 //no = which set of slides this is
 function currentSlide(n, no) {
-  showSlides(slideIndex = n, no);
+  showSlides(slideIndex[no] = n, no);
 }
 
 function showSlides(n, no) {
   var i;
   var slides = document.getElementsByClassName(slideId[no]);
-  var dots = document.getElementsByClassName(dotId[no]);
+  var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex[no] = 1}    
   if (n < 1) {slideIndex[no] = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -32,7 +30,3 @@ function showSlides(n, no) {
   }
   slides[slideIndex[no]-1].style.display = "block";  
 }
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-
